@@ -4,12 +4,7 @@ We sleep in if it is not a weekday or we're on vacation. Return True if we sleep
 
 
 def sleep_in(weekday, vacation):
-    if not weekday:
-        return True
-    elif vacation:
-        return True
-    else:
-        return False
+    return not weekday or vacation
 
 
 print(sleep_in(True, False))
